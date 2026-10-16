@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя школа</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+            margin: 20px;
+            color: black;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .header {
+            background-color: lightblue;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu {
+            background-color: #eeeeff;
+            width: 25%;
+        }
+
+        .menu a {
+            display: block;
+            padding: 8px;
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: red;
+        }
+
+        .content {
+            background-color: white;
+        }
+
+        .footer {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<table border="1">
+
+    <tr>
+        <td colspan="2" class="header">
+            Моя школа №114
+        </td>
+    </tr>
+
+    <tr>
+        <td class="menu">
+            <h3>Менюшка</h3>
+
+            <a href="index.html">Головна</a>
+            <a href="https://www.google.com" target="_blank">Шукай нас в Google</a>
+            <a href="https://www.wikipedia.org" target="_blank">Вікіпедія</a>
+        </td>
+
+        <td class="content">
+            <h2>Здоровеньки були!</h2>
+
+            <p>
+                Це сторіночка про нашу школу.
+                Тут ви можете знайти багато цікавої
+                інформації про наше життя.
+            </p>
+
+            <p><b>Чому ми? Переваги:</b></p>
+
+            <ul>
+                <li>Сучасні комп'ютерні класи</li>
+                <li>Досвідчені і файні вчителі</li>
+                <li>Цікаві гуртки та секції</li>
+            </ul>
+
+            <img src="images (1).jpg" alt="Фото школи">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="footer">
+            2026. Моя школа. Бузиле Віталій 8-М.
+            <p>Натисніть на сторінку, щоб увімкнути музику!</p>
+
+            <audio id="bgmusic" loop>
+                <source src="Добрий ранок, Україно.mp3" type="audio/mpeg">
+            </audio>
+
+            <script>
+                document.addEventListener('click', function() {
+                    var music = document.getElementById('bgmusic');
+                    music.volume = 0.3;
+                    music.play();
+                }, { once: true });
+            </script>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+```
